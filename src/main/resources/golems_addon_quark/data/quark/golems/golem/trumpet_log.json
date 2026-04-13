@@ -16,9 +16,9 @@
 		"sound": "minecraft:item.axe.strip",
 		"particle": {
 		  "type": "minecraft:item",
-		  "value": {
+		  "item": {
 			"id": "quark:blossom_log",
-			"Count": 1
+			"count": 1
 		  }
 		},
 		"apply": {
