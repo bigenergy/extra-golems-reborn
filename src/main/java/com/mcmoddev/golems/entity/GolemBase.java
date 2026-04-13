@@ -377,6 +377,10 @@ public class GolemBase extends IronGolem implements IExtraGolem {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevel, DifficultyInstance difficulty,
 			MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData) {
+		// set default golem ID when spawned via spawn egg and no ID is set
+		if (getGolemId().isEmpty() && mobSpawnType == MobSpawnType.SPAWN_EGG) {
+			setGolemId(ResourceLocation.fromNamespaceAndPath(ExtraGolems.MODID, "clay"));
+		}
 		this.setHealth(this.getMaxHealth());
 		getContainer(serverLevel.registryAccess())
 				.ifPresent(c -> this.setInvulnerable(c.getAttributes().isInvulnerable()));

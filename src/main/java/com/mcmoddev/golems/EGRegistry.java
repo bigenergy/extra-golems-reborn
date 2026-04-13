@@ -72,6 +72,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -176,6 +177,8 @@ public final class EGRegistry {
 
 		public static final DeferredHolder<Item, Item> GOLEM_HEAD = ITEMS.register("golem_head",
 				() -> new GolemHeadItem(BlockReg.GOLEM_HEAD.get(), new Item.Properties()));
+		public static final DeferredHolder<Item, DeferredSpawnEggItem> GOLEM_SPAWN_EGG = ITEMS.register("golem_spawn_egg",
+				() -> new DeferredSpawnEggItem(EntityReg.GOLEM, 0x9B9B9B, 0x4A7D2C, new Item.Properties()));
 	}
 
 	public static final class CreativeTabReg {
@@ -199,6 +202,7 @@ public final class EGRegistry {
 			}
 			if (event.getTabKey().equals(CreativeModeTabs.SPAWN_EGGS)) {
 				event.accept(ItemReg.SPAWN_BEDROCK_GOLEM.get());
+				event.accept(ItemReg.GOLEM_SPAWN_EGG.get());
 			}
 		}
 	}
