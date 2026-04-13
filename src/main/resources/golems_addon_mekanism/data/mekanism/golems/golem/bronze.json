@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "health": 115.0,
+    "attack": 8.5,
+    "knockback_resistance": 0.8,
+	"sound": "minecraft:metal"
+  },
+  "group": "golems:bronze",
+  "blocks": {
+	"all": "#c:storage_blocks/bronze"
+  },
+  "repair_items": {
+    "#c:storage_blocks/bronze": 0.5,
+    "#c:ingots/bronze": 0.15
+  },
+  "model": "mekanism:bronze",
+  "brain": "golems:empty"
+}

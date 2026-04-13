@@ -1,0 +1,20 @@
+{
+  "attributes": {
+    "health": 50.0,
+    "attack": 7.0,
+	"speed": 0.23,
+    "knockback_resistance": 0.9,
+	"sound": "minecraft:metal"
+  },
+  "group": "golems:raw_ore",
+  "blocks": {
+	"all": "#c:storage_blocks/raw_iron"
+  },
+  "repair_items": {
+    "#c:storage_blocks/raw_iron": 0.5,
+	"#c:raw_materials/iron": 0.1,
+	"#c:ingots/iron": 0.25
+  },
+  "model": "golems:raw_iron",
+  "brain": "golems:empty"
+}

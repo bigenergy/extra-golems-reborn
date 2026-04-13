@@ -1,0 +1,24 @@
+{
+  "attributes": {
+	"health": 102.0,
+	"attack": 8.9,
+	"knockback_resistance": 0.8,
+	"sound": "minecraft:metal"
+  },
+  "blocks": {
+	"all": "#c:storage_blocks/lumium"
+  },
+  "repair_items": {
+    "#c:storage_blocks/lumium": 0.5,
+    "#c:ingots/lumium": 0.15
+  },
+  "model": "thermal:lumium",
+  "brain": {
+	"behaviors": [
+	  {
+		"type": "golems:light",
+		"light": 15
+	  }
+	]
+  }
+}

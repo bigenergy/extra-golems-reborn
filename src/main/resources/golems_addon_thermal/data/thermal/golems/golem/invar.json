@@ -1,0 +1,17 @@
+{
+  "attributes": {
+	"health": 106.0,
+	"attack": 9.7,
+	"knockback_resistance": 0.8,
+	"sound": "minecraft:metal"
+  },
+  "blocks": {
+	"all": "#c:storage_blocks/invar"
+  },
+  "repair_items": {
+    "#c:storage_blocks/invar": 0.5,
+    "#c:ingots/invar": 0.15
+  },
+  "model": "thermal:invar",
+  "brain": "golems:empty"
+}

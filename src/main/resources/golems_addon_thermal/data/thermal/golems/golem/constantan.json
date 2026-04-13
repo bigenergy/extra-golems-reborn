@@ -1,0 +1,17 @@
+{
+  "attributes": {
+	"health": 106.0,
+	"attack": 9.8,
+	"knockback_resistance": 0.8,
+	"sound": "minecraft:metal"
+  },
+  "blocks": {
+	"all": "#c:storage_blocks/constantan"
+  },
+  "repair_items": {
+    "#c:storage_blocks/constantan": 0.5,
+    "#c:ingots/constantan": 0.15
+  },
+  "model": "thermal:constantan",
+  "brain": "golems:empty"
+}

@@ -1,0 +1,20 @@
+{
+  "attributes": {
+    "health": 85.0,
+    "attack": 11.5,
+	"speed": 0.21,
+    "knockback_resistance": 1.0,
+	"armor": 2.5,
+	"sound": "minecraft:metal"
+  },
+  "blocks": {
+	"all": "#c:storage_blocks/gold"
+  },
+  "repair_items": {
+    "#c:storage_blocks/gold": 0.5,
+	"#c:ingots/gold": 0.1,
+	"#c:nuggets/gold": 0.05
+  },
+  "model": "golems:gold",
+  "brain": "golems:empty"
+}

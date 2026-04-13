@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "health": 85.0,
+    "attack": 11.5,
+    "speed": 0.28,
+	"knockback_resistance": 0.6
+  },
+  "blocks": {
+	"all": "#c:quartz"
+  },
+  "repair_items": {
+    "#c:quartz": 0.5,
+	"#c:gems/quartz": 0.15
+  },
+  "model": "golems:quartz",
+  "brain": "golems:empty"
+}
